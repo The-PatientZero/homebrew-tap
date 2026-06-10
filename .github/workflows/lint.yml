@@ -1,0 +1,19 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  style:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: brew style
+        run: |
+          TAPS_DIR="$(brew --repository)/Library/Taps/the-patientzero"
+          mkdir -p "$TAPS_DIR"
+          ln -s "$PWD" "$TAPS_DIR/homebrew-tap"
+          brew style --cask the-patientzero/tap/yank
