@@ -2,14 +2,14 @@ cask "yank" do
   version "1.0.0"
   sha256 "REPLACE_WITH_DMG_SHA256" # filled by yank/scripts/update_homebrew_cask.sh on release
 
-  url "https://github.com/The-PatientZero/yank-releases/releases/download/v#{version}/Yank.dmg",
-      verified: "github.com/The-PatientZero/yank-releases/"
+  url "https://github.com/The-PatientZero/yank/releases/download/v#{version}/Yank.dmg",
+      verified: "github.com/The-PatientZero/yank/"
   name "Yank"
   desc "Fast, private clipboard manager with iCloud sync"
   homepage "https://getyank.vercel.app/"
 
   livecheck do
-    url "https://github.com/The-PatientZero/yank-releases"
+    url "https://github.com/The-PatientZero/yank"
     strategy :github_latest
   end
 
