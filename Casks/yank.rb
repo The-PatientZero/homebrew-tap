@@ -1,6 +1,6 @@
 cask "yank" do
-  version "1.0.4"
-  sha256 "845239bada064f3484634b0d643e46da043478ee460c07245e89a9bb84567be7"
+  version "1.1.0"
+  sha256 "38166b5ab378f3a1d4476f84609e53429841499855ef00c8cd56334e82f83b49"
 
   url "https://github.com/The-PatientZero/yank/releases/download/v#{version}/Yank.dmg",
       verified: "github.com/The-PatientZero/yank/"
