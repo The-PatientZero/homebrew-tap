@@ -2,14 +2,14 @@ cask "yank" do
   version "1.4.1"
   sha256 "51666574b1762491bf58c973d907b1b08ba868d1358d699f5f00bb24d229fa76"
 
-  url "https://github.com/The-PatientZero/yank/releases/download/v#{version}/Yank.dmg",
-      verified: "github.com/The-PatientZero/yank/"
+  url "https://github.com/koksalmehmet/yank/releases/download/v#{version}/Yank.dmg",
+      verified: "github.com/koksalmehmet/yank/"
   name "Yank"
   desc "Fast, private clipboard manager with iCloud sync"
   homepage "https://getyank.vercel.app/"
 
   livecheck do
-    url "https://github.com/The-PatientZero/yank"
+    url "https://github.com/koksalmehmet/yank"
     strategy :github_latest
   end
 
