@@ -13,7 +13,7 @@ jobs:
 
       - name: brew style
         run: |
-          TAPS_DIR="$(brew --repository)/Library/Taps/the-patientzero"
+          TAPS_DIR="$(brew --repository)/Library/Taps/koksalmehmet"
           mkdir -p "$TAPS_DIR"
           ln -s "$PWD" "$TAPS_DIR/homebrew-tap"
-          brew style --cask the-patientzero/tap/yank
+          brew style --cask koksalmehmet/tap/yank
